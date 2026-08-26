@@ -1,0 +1,36 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #172033; background: #eaf0f7; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+main { width: min(820px, calc(100% - 40px)); margin: 48px auto; }
+header { margin-bottom: 28px; }
+.eyebrow { color: #4f46e5; font-size: 12px; font-weight: 900; letter-spacing: .14em; }
+h1 { font-size: clamp(28px, 5vw, 44px); margin: 8px 0; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+button { font: inherit; cursor: pointer; }
+.card { display: grid; gap: 7px; text-align: left; padding: 20px; border: 2px solid transparent; border-radius: 15px; background: white; color: #172033; }
+.card small { color: #64748b; }
+.card.selected { border-color: #4f46e5; background: #eef2ff; }
+.composer, .result, .history, .faults { margin-top: 18px; background: white; border-radius: 15px; padding: 22px; }
+label { display: grid; gap: 8px; font-weight: 800; }
+input { padding: 13px; border: 1px solid #cbd5e1; border-radius: 9px; font-size: 16px; }
+.send { width: 100%; margin-top: 13px; padding: 14px; border: 0; border-radius: 9px; background: #4f46e5; color: white; font-weight: 900; }
+.result { display: grid; gap: 6px; border-left: 6px solid #eab308; }
+.result.completed { border-color: #16a34a; background: #f0fdf4; }
+.result.failed { border-color: #dc2626; background: #fef2f2; }
+.result span, article small { color: #64748b; }
+.history h2, .faults h2 { margin: 0; }
+.section-title { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.section-title .eyebrow { margin: 0 0 5px; }
+.section-title > span { padding: 7px 10px; border-radius: 999px; background: #fee2e2; color: #991b1b; font-size: 12px; font-weight: 900; }
+article { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #e2e8f0; }
+article div { display: grid; gap: 4px; }
+article b { font-size: 12px; }
+.fault { align-items: center; }
+.fault.active { border-left: 4px solid #dc2626; padding-left: 12px; }
+.fault.acknowledged { border-left: 4px solid #eab308; padding-left: 12px; }
+.fault.resolved { opacity: .65; }
+.fault-actions { justify-items: end; }
+.fault-actions button { border: 0; border-radius: 8px; padding: 8px 11px; background: #334155; color: white; font-weight: 800; }
+.fault-actions .recover { background: #4f46e5; }
+.pending { color: #a16207; } .completed { color: #15803d; } .failed, .error { color: #b91c1c; }
+@media (max-width: 640px) { .cards { grid-template-columns: 1fr; } .fault { align-items: start; } }

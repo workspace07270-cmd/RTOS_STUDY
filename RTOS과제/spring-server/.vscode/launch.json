@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Day04Application<spring-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.day04.Day04Application",
+      "projectName": "spring-server",
+      "console": "internalConsole"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Day04Application<spring-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.day05.Day04Application",
+      "projectName": "spring-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

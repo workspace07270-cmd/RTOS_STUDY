@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.day04.TaskApiTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-11T05:31:11.003Z" hostname="User-2025AAYOUP" time="2.652">
+  <properties/>
+  <testcase name="requestAndCompleteTask()" classname="com.example.day04.TaskApiTest" time="0.871"/>
+  <system-out><![CDATA[14:31:11.193 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.day04.TaskApiTest]: TaskApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:31:11.330 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.day04.Day04Application for test class com.example.day04.TaskApiTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-08-11T14:31:11.703+09:00  INFO 24648 --- [    Test worker] com.example.day04.TaskApiTest            : Starting TaskApiTest using Java 21.0.11 with PID 24648 (started by Administrator in C:\workspace\rtos_context\day04\examples\spring-server)
+2026-08-11T14:31:11.704+09:00  INFO 24648 --- [    Test worker] com.example.day04.TaskApiTest            : No active profile set, falling back to 1 default profile: "default"
+2026-08-11T14:31:12.731+09:00  INFO 24648 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-08-11T14:31:12.731+09:00  INFO 24648 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-08-11T14:31:12.733+09:00  INFO 24648 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-08-11T14:31:12.771+09:00  INFO 24648 --- [    Test worker] com.example.day04.TaskApiTest            : Started TaskApiTest in 1.282 seconds (process running for 2.458)
+2026-08-11T14:31:13.560+09:00  INFO 24648 --- [    Test worker] com.example.day04.TaskController         : [React -> Spring] 작업 요청 id=1, type=PRINT_RECEIPT
+2026-08-11T14:31:13.643+09:00  INFO 24648 --- [    Test worker] com.example.day04.TaskController         : [RTOS -> Spring] 작업 완료 id=1, result=receipt printed: ORDER-1001
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
